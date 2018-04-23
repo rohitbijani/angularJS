@@ -1,10 +1,25 @@
 <html>
-
-<form name="login" action="/index.html" method="post" >
-  <input ng-model="user.title" class="ng-valid md-input ng-empty ng-dirty ng-valid-parse ng-touched" id="input_32" aria-invalid="false" style="">
-  User Name: <input type="text" name="uname" placeholder="username"><br><br>
-  Password: <input type="password" name="pwd" placeholder="******" required><br><br>
-  <input type="submit" name="submit" value="SUBMIT" onclick="return validateForm()">
+<head>
+</head>
+<body>
+  <div>
+<form name="form" ng-submit="validateForm()" method="post" >
+  <div class="form-group">
+   <md-input-container flex="" class="flex">
+     <label for="uname">Username</label>
+    <input type="text" class="md-input" id="input_33">
+    </md-input-container>
+  </div>
+  <div class="form-group">
+    <md-input-container flex="" class="flex">
+    <label for="password">Password</label>
+    <input type="password" name="pwd" placeholder="******" required>
+  </md-input-container>
+</div>
+<div class="form-actions">
+<input type="submit" name="submit" value="SUBMIT" onclick="return validateForm()">
+</div>
 </form>
-
+</div>
+</body>
 </html>
