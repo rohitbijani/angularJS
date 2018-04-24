@@ -4,13 +4,7 @@
 *@purpose
 *@description
 ****/
-
-/**
-*@method : fetch
-*@params : { studentName : string,rollNumber:number}
-*@return : {} : Student
-**/
-
-app.controller('loginController', function($scope){
-  $scope.
-})
+ myApp.controller('loginController', function($scope){
+   $scope.uname="";
+   $scope.password="";
+ });

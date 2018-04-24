@@ -1,0 +1,38 @@
+body{
+  background-color: #eee;
+}
+.topbar{
+  background-color: #808080;
+  border-left: 25px #696969 solid;
+  border-right: 25px #696969 solid;
+  padding: 2px;
+  color: #dcdcdc;
+  text-align: center;
+  font-family: times;
+}
+.container{
+  margin: 80px;
+  color: inherit;
+}
+form{
+  border-style: outset;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 40px;
+  background-color: #eee;
+
+}
+.button{
+  padding: 0px 10px;
+  layout-align: center;
+  color: #fff;
+  display: inline-block;
+  background-color: #428bca;
+  border-color: #357ebd
+  border: 1px solid transparent;
+  cursor: pointer;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  font-family: verdana;
+  font-size: 18px;
+}
