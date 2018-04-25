@@ -20,9 +20,8 @@ form{
   margin-left: auto;
   padding: 40px;
   background-color: #eee;
-
 }
-.button{
+.form-button{
   padding: 0px 10px;
   layout-align: center;
   color: #fff;
@@ -35,4 +34,7 @@ form{
   border-radius: 4px;
   font-family: verdana;
   font-size: 18px;
+}
+.form-button[disabled]{
+  background-color: #f0b7c4;
 }

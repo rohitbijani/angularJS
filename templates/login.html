@@ -6,21 +6,22 @@
     <h1>LOGIN</h1>
   </div>
   <div layout="row" layout-align="center" class="container">
-<form name="form" method="post" >
+<form name="form" method="post" ng-submit="validate()">
   <div class="form-group">
    <md-input-container flex="" class="flex">
-     <label for="uname">Username</label>
-    <input type="text" class="md-input" ng-model="uname" required></input>
+     <label for="email">Email ID</label>
+    <input type="email" ng-pattern="word" name="email" ng-model="email" required></input>
     </md-input-container>
   </div>
   <div class="form-group">
     <md-input-container flex="" class="flex">
     <label for="password">Password</label>
-    <input type="password" class="md-input" ng-model="password" required></input>
+    <input type="password" name="password" ng-model="password" required></input>
   </md-input-container>
 </div>
 <div class="form-actions">
-<button name="login" class="button">Login</button>
+<button type="submit" class="form-button" ng-disabled="form.$invalid">Login</button>
+<p><tt><i>{{display}}</i></tt></p>
 </div>
 </form>
 </div>
