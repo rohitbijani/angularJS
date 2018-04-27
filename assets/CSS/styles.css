@@ -38,6 +38,7 @@ form{
 .form-button[disabled]{
   background-color: #f0b7c4;
 }
-.navbar{
-  background-color: #fff;
+.md-toolbar-tools{
+  background-color: #262626;
+
 }

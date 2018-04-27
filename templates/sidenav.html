@@ -1,35 +1,17 @@
-<div ng-controller="AppCtrl" layout="column" style="height: 500px;" ng-cloak="" class="sidenavdemoCustomSidenav" ng-app="MyApp">
-
-  <section layout="row" flex="">
-
-    <md-sidenav class="md-sidenav-left" md-component-id="left" md-disable-backdrop="" md-whiteframe="4">
-
-      <md-toolbar class="md-theme-indigo">
-        <h1 class="md-toolbar-tools">Disabled Backdrop</h1>
-      </md-toolbar>
-
-      <md-content layout-margin="">
-        <p>
-          This sidenav is not showing any backdrop, where users can click on it, to close the sidenav.
-        </p>
-        <md-button ng-click="toggleLeft()" class="md-accent">
-          Close this Sidenav
-        </md-button>
+<div layout="row">
+  <section layout="row" flex>
+    <md-sidenav  class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
+      <md-content layout-margin>
+  <md-list>
+  <md-list-item class="md-2-line" ng-repeat="item in todos">
+    <md-checkbox ng-model="item.done"></md-checkbox>
+    <div class="md-list-item-text">
+      <h3>{{item.title}}</h3>
+      <p>{{item.description}}</p>
+    </div>
+  </md-list-item>
+</md-list>
       </md-content>
-
     </md-sidenav>
-
-    <md-content flex="" layout-padding="">
-
-          <md-button ng-click="toggleLeft()" class="md-raised">
-            Toggle Sidenav
-          </md-button>
-        </div>
-
-      </div>
-
-    </md-content>
-
   </section>
-
 </div>
