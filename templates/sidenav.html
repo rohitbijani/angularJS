@@ -1,17 +1,40 @@
 <div layout="row">
   <section layout="row" flex>
     <md-sidenav  class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
+      <md-toolbar class="md-toolbar-tools" id="sidenav-menu" fixed>
+        <h3>Filter By </h3>
+      </md-toolbar>
       <md-content layout-margin>
-  <md-list>
-  <md-list-item class="md-2-line" ng-repeat="item in todos">
-    <md-checkbox ng-model="item.done"></md-checkbox>
-    <div class="md-list-item-text">
-      <h3>{{item.title}}</h3>
-      <p>{{item.description}}</p>
-    </div>
-  </md-list-item>
-</md-list>
-      </md-content>
+          <fieldset>
+            <legend>Manufacturer</legend>
+            <div>
+              <md-checkbox ng-repeat="x in manufacturer" ng-click="toggle(x,manufacturerArray)">
+              </md-checkbox>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Storage</legend>
+            <div ng-repeat="x in specs.storage">
+              <md-checkbox ng-click="toggle(x,storageArray)">
+                {{x}}
+              </md-checkbox>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>OS</legend>
+            <div>
+              <md-checkbox ng-repeat="x in os" ng-click="toggle(x,osArray)">
+              </md-checkbox>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Camera</legend>
+            <div>
+              <md-checkbox ng-repeat="x in camera" ng-click="toggle(x,camerArray)">
+              </md-checkbox>
+            </div>
+          </fieldset>
+    </md-content>
     </md-sidenav>
   </section>
 </div>
