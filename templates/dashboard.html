@@ -1,4 +1,22 @@
-<html>
-<body>
-</body>
-</html>
+
+  <div ng-repeat="x in products">
+    <md-card class="mobile-card" md-disable-backdrop>
+      <img ng-src="{{x.image.small}}">
+      <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">{{x.name}}</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+          <p>
+            <b>Manufacturer: </b>{{x.specs.manufacturer}}
+          </p>
+          <p>
+            <b>Storage: </b>{{x.specs.storage}} GB <b> OS: </b>{{x.specs.os}}
+          </p>
+          <p>
+            <b>Camera: </b>{{x.specs.camera}} MP
+          </p>
+        </md-card-content>
+    </md-card>
+  </div>

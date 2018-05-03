@@ -16,7 +16,7 @@
        $scope.display="Incorrect EmailID or Password!"
      }
      else {
-       $state.go('home');
+       $state.go('home.dashboard');
      }
    }
  });

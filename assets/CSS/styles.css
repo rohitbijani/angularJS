@@ -41,7 +41,13 @@ form{
 .md-toolbar-tools{
   background-color: #262626;
 }
+.md-sidenav-left{
+  margin-top: 65px;
+}
 #sidenav-menu{
   background-color: #ff3333;
   font-style: oblique;
+}
+.mobile-card{
+  width: 300px;
 }
