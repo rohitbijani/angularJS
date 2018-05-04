@@ -7,33 +7,33 @@
       <md-content layout-margin>
           <fieldset>
             <legend>Manufacturer</legend>
-            <div ng-repeat="x in products">
+            <div ng-repeat="x in manufacturerArray">
               <md-checkbox ng-click="toggle(x,manufacturerArray)">
-                {{x.specs.manufacturer}}
+                {{x}}
               </md-checkbox>
             </div>
           </fieldset>
           <fieldset>
             <legend>Storage</legend>
-            <div ng-repeat="x in products">
+            <div ng-repeat="x in storageArray">
               <md-checkbox ng-click="toggle(x,storageArray)">
-                {{x.specs.storage + " GB"}}
+                {{x + " GB"}}
               </md-checkbox>
             </div>
           </fieldset>
           <fieldset>
             <legend>OS</legend>
-            <div ng-repeat="x in products">
+            <div ng-repeat="x in osArray">
               <md-checkbox ng-click="toggle(x,osArray)">
-                {{x.specs.os}}
+                {{x}}
               </md-checkbox>
             </div>
           </fieldset>
           <fieldset>
             <legend>Camera</legend>
-            <div ng-repeat="x in products">
+            <div ng-repeat="x in cameraArray">
               <md-checkbox ng-click="toggle(x,camerArray)">
-                {{x.specs.camera + " MP"}}
+                {{x + " MP"}}
               </md-checkbox>
             </div>
           </fieldset>

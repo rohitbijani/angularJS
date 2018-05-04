@@ -1,6 +1,5 @@
-
-  <div ng-repeat="x in products">
-    <md-card class="mobile-card" md-disable-backdrop>
+<div>
+    <md-card ng-repeat="x in products">
       <img ng-src="{{x.image.small}}">
       <md-card-title>
           <md-card-title-text>
@@ -18,5 +17,9 @@
             <b>Camera: </b>{{x.specs.camera}} MP
           </p>
         </md-card-content>
-    </md-card>
-  </div>
+        <md-card-actions layout="row">
+          <md-button class="md-raised">BUY</md-button>
+          <p><i>&nbsp $ {{x.price}} </i></p>
+        </md-card-actions>
+      </md-card>
+</div>

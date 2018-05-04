@@ -23,17 +23,13 @@ form{
 }
 .form-button{
   padding: 0px 10px;
-  layout-align: center;
   color: #fff;
   display: inline-block;
   background-color: #428bca;
-  border-color: #357ebd
   border: 1px solid transparent;
   cursor: pointer;
-  line-height: 1.42857143;
   border-radius: 4px;
-  font-family: verdana;
-  font-size: 18px;
+  font-size: 16px;
 }
 .form-button[disabled]{
   background-color: #f0b7c4;
@@ -43,6 +39,7 @@ form{
 }
 .md-sidenav-left{
   margin-top: 65px;
+  height: 100%;
 }
 #sidenav-menu{
   background-color: #ff3333;
@@ -50,4 +47,7 @@ form{
 }
 .mobile-card{
   width: 300px;
+}
+.md-raised{
+  background-color: rgb(180, 130, 130);
 }
