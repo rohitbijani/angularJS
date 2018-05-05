@@ -11,6 +11,7 @@ myApp.controller('homeController',function($scope,$mdSidenav,jsonRead,_){
     $scope.storageArray=[];
     $scope.osArray=[];
     $scope.cameraArray=[];
+    $scope.selected=[];
 
     jsonRead.read().then(response=>{
       $scope.products = response.data;
@@ -28,4 +29,17 @@ myApp.controller('homeController',function($scope,$mdSidenav,jsonRead,_){
       console.log($scope.manufacturerArray);
     });
 
+    $scope.checkbox = function(item,list){
+      var idx = list.indexOf(item);
+       if (idx > -1) {
+         list.splice(idx, 1);
+       }
+       else {
+         list.push(item);
+       }
+    };
+    
+    $scope.exists = function (item, list) {
+       return list.indexOf(item) > -1;
+     };
 });

@@ -1,6 +1,7 @@
-<div>
-    <md-card ng-repeat="x in products">
-      <img ng-src="{{x.image.small}}">
+<div layout="row" layout-wrap layout-align="center">
+  <div ng-repeat="x in products" flex="30" layout-align="center">
+    <md-card class="mobile-card">
+      <center><img style="width:65%; height:60%" ng-src="{{x.image.small}}"></center>
       <md-card-title>
           <md-card-title-text>
             <span class="md-headline">{{x.name}}</span>
@@ -17,9 +18,10 @@
             <b>Camera: </b>{{x.specs.camera}} MP
           </p>
         </md-card-content>
-        <md-card-actions layout="row">
-          <md-button class="md-raised">BUY</md-button>
-          <p><i>&nbsp $ {{x.price}} </i></p>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button class="md-raised" id="buy-button">BUY</md-button>
+          <p><i><b>&nbsp ${{x.price}} </b></i></p>
         </md-card-actions>
       </md-card>
+    </div>
 </div>

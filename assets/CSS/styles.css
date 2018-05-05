@@ -36,18 +36,20 @@ form{
 }
 .md-toolbar-tools{
   background-color: #262626;
+  position: fixed;
 }
 .md-sidenav-left{
-  margin-top: 65px;
-  height: 100%;
+  margin-top: 64px;
+  position: fixed;
 }
 #sidenav-menu{
   background-color: #ff3333;
   font-style: oblique;
 }
 .mobile-card{
-  width: 300px;
+  padding: 6px;
 }
-.md-raised{
-  background-color: rgb(180, 130, 130);
+#buy-button{
+  background-color: rgb(120, 150, 150);
+  color: white;
 }

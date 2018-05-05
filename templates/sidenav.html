@@ -1,14 +1,15 @@
-<div layout="row">
-  <section layout="row" flex>
+<div layout="column">
+  <section layout="row">
     <md-sidenav  class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
-      <md-toolbar class="md-toolbar-tools" id="sidenav-menu" fixed>
+      <md-toolbar class="md-toolbar-tools" id="sidenav-menu">
         <h3>Filter By </h3>
       </md-toolbar>
       <md-content layout-margin>
+        <div>
           <fieldset>
             <legend>Manufacturer</legend>
             <div ng-repeat="x in manufacturerArray">
-              <md-checkbox ng-click="toggle(x,manufacturerArray)">
+              <md-checkbox ng-checked="exists(x, selected)" ng-click="checkbox(x,selected)">
                 {{x}}
               </md-checkbox>
             </div>
@@ -37,6 +38,7 @@
               </md-checkbox>
             </div>
           </fieldset>
+        </div>
     </md-content>
     </md-sidenav>
   </section>
