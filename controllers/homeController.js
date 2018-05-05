@@ -38,7 +38,7 @@ myApp.controller('homeController',function($scope,$mdSidenav,jsonRead,_){
          list.push(item);
        }
     };
-    
+    console.log($scope.selected);
     $scope.exists = function (item, list) {
        return list.indexOf(item) > -1;
      };
