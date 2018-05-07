@@ -1,4 +1,4 @@
-myApp.controller('homeController',function($scope,$mdSidenav,jsonRead,_){
+myApp.controller('homeController',function($scope,$mdSidenav,jsonRead,_,$mdDialog){
   $scope.toggleLeft=buildToggler('left');
 
   function buildToggler(componentID) {
@@ -29,17 +29,34 @@ myApp.controller('homeController',function($scope,$mdSidenav,jsonRead,_){
       console.log($scope.manufacturerArray);
     });
 
+    $scope.showAlert = function(ev,product) {
+      $mdDialog.show({
+        locals: {mobile : product},
+        controller: ['$scope','mobile',function($scope,mobile){
+          $scope.mobile = mobile;
+        }],
+        templateUrl: 'templates/dialog.html',
+        parent: angular.element(document.body),
+        targetEvent: ev,
+        clickOutsideToClose:true
+      });
+    };
+
     $scope.checkbox = function(item,list){
       var idx = list.indexOf(item);
-       if (idx > -1) {
-         list.splice(idx, 1);
-       }
-       else {
-         list.push(item);
-       }
+      if (idx > -1) {
+        list.splice(idx, 1);
+      }
+      else {
+        list.push(item);
+      }
     };
     console.log($scope.selected);
     $scope.exists = function (item, list) {
        return list.indexOf(item) > -1;
      };
+
+     
+     // angular.forEach()
+
 });

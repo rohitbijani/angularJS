@@ -1,5 +1,5 @@
 <div layout="row" layout-wrap layout-align="center">
-  <div ng-repeat="x in products" flex="30" layout-align="center">
+  <div ng-repeat="x in products|mobileFilter" flex="30" layout-align="center">
     <md-card class="mobile-card">
       <center><img style="width:65%; height:60%" ng-src="{{x.image.small}}"></center>
       <md-card-title>
@@ -19,7 +19,7 @@
           </p>
         </md-card-content>
         <md-card-actions layout="row" layout-align="end center">
-          <md-button class="md-raised" id="buy-button">BUY</md-button>
+          <md-button class="md-raised" id="buy-button" ng-click="showAlert($event,x)">BUY</md-button>
           <p><i><b>&nbsp ${{x.price}} </b></i></p>
         </md-card-actions>
       </md-card>

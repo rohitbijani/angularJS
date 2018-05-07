@@ -4,10 +4,10 @@
       <md-toolbar class="md-toolbar-tools" id="sidenav-menu">
         <h3>Filter By </h3>
       </md-toolbar>
-      <md-content layout-margin>
+      <md-content layout-margin id="sidenav-content">
         <div>
           <fieldset>
-            <legend>Manufacturer</legend>
+            <legend><b>Manufacturer</b></legend>
             <div ng-repeat="x in manufacturerArray">
               <md-checkbox ng-checked="exists(x, selected)" ng-click="checkbox(x,selected)">
                 {{x}}
@@ -15,25 +15,25 @@
             </div>
           </fieldset>
           <fieldset>
-            <legend>Storage</legend>
+            <legend><b>Storage</b></legend>
             <div ng-repeat="x in storageArray">
-              <md-checkbox ng-click="toggle(x,storageArray)">
+              <md-checkbox ng-checked="exists(x, selected)" ng-click="checkbox(x,selected)">
                 {{x + " GB"}}
               </md-checkbox>
             </div>
           </fieldset>
           <fieldset>
-            <legend>OS</legend>
+            <legend><b>OS</b></legend>
             <div ng-repeat="x in osArray">
-              <md-checkbox ng-click="toggle(x,osArray)">
+              <md-checkbox ng-checked="exists(x, selected)" ng-click="checkbox(x,selected)">
                 {{x}}
               </md-checkbox>
             </div>
           </fieldset>
           <fieldset>
-            <legend>Camera</legend>
+            <legend><b>Camera</b></legend>
             <div ng-repeat="x in cameraArray">
-              <md-checkbox ng-click="toggle(x,camerArray)">
+              <md-checkbox ng-checked="exists(x, selected)" ng-click="checkbox(x,selected)">
                 {{x + " MP"}}
               </md-checkbox>
             </div>
