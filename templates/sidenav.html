@@ -9,7 +9,7 @@
           <fieldset>
             <legend><b>Manufacturer</b></legend>
             <div ng-repeat="x in manufacturerArray">
-              <md-checkbox ng-checked="exists(x, selected)" ng-click="checkbox(x,selected)">
+              <md-checkbox ng-checked="exists(x, manufacturerSelected)" ng-click="checkbox(x,manufacturerSelected)">
                 {{x}}
               </md-checkbox>
             </div>
@@ -17,7 +17,7 @@
           <fieldset>
             <legend><b>Storage</b></legend>
             <div ng-repeat="x in storageArray">
-              <md-checkbox ng-checked="exists(x, selected)" ng-click="checkbox(x,selected)">
+              <md-checkbox ng-checked="exists(x, storageSelected)" ng-click="checkbox(x,storageSelected)">
                 {{x + " GB"}}
               </md-checkbox>
             </div>
@@ -25,7 +25,7 @@
           <fieldset>
             <legend><b>OS</b></legend>
             <div ng-repeat="x in osArray">
-              <md-checkbox ng-checked="exists(x, selected)" ng-click="checkbox(x,selected)">
+              <md-checkbox ng-checked="exists(x, osSelected)" ng-click="checkbox(x,osSelected)">
                 {{x}}
               </md-checkbox>
             </div>
@@ -33,7 +33,7 @@
           <fieldset>
             <legend><b>Camera</b></legend>
             <div ng-repeat="x in cameraArray">
-              <md-checkbox ng-checked="exists(x, selected)" ng-click="checkbox(x,selected)">
+              <md-checkbox ng-checked="exists(x, cameraSelected)" ng-click="checkbox(x,cameraSelected)">
                 {{x + " MP"}}
               </md-checkbox>
             </div>

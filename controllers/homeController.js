@@ -11,7 +11,10 @@ myApp.controller('homeController',function($scope,$mdSidenav,jsonRead,_,$mdDialo
     $scope.storageArray=[];
     $scope.osArray=[];
     $scope.cameraArray=[];
-    $scope.selected=[];
+    $scope.manufacturerSelected=[];
+    $scope.storageSelected=[];
+    $scope.osSelected=[];
+    $scope.cameraSelected=[];
 
     jsonRead.read().then(response=>{
       $scope.products = response.data;
@@ -51,12 +54,9 @@ myApp.controller('homeController',function($scope,$mdSidenav,jsonRead,_,$mdDialo
         list.push(item);
       }
     };
-    console.log($scope.selected);
+    console.log($scope.manufacturerSelected);
     $scope.exists = function (item, list) {
        return list.indexOf(item) > -1;
      };
-
-     
-     // angular.forEach()
 
 });

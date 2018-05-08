@@ -1,5 +1,5 @@
 <div layout="row" layout-wrap layout-align="center">
-  <div ng-repeat="x in products|mobileFilter" flex="30" layout-align="center">
+  <div ng-repeat="x in products | mobileFilter: manufacturerSelected: storageSelected: osSelected: cameraSelected" flex="30" layout-align="center">
     <md-card class="mobile-card">
       <center><img style="width:65%; height:60%" ng-src="{{x.image.small}}"></center>
       <md-card-title>
