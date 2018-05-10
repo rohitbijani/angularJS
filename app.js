@@ -15,7 +15,6 @@ myApp.config(function($stateProvider,$urlRouterProvider){
     })
     .state('home.dashboard', {
       url: '/dashboard',
-      templateUrl: 'templates/dashboard.html',
-      controller: 'homeController'
+      templateUrl: 'templates/dashboard.html'
     });
 });
