@@ -1,5 +1,5 @@
 body{
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 .topbar{
   background-color: #808080;
@@ -41,16 +41,15 @@ form{
 .md-sidenav-left{
   margin-top: 64px;
   position: fixed;
+  font-family: comic;
 }
 #sidenav-menu{
   background-color: #ff3333;
   font-style: oblique;
+  font-family: monospace;
 }
 #sidenav-content{
   margin-top: 65px;
-}
-.mobile-card{
-  padding: 6px;
 }
 #buy-button{
   background-color: rgb(120, 150, 150);

@@ -6,7 +6,7 @@ myApp.controller('homeController',function($scope,$mdSidenav,jsonRead,_,$mdDialo
         $mdSidenav(componentID).toggle();
       };
     }
-
+    
     $scope.manufacturerArray=[];
     $scope.storageArray=[];
     $scope.osArray=[];

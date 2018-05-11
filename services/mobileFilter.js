@@ -23,6 +23,7 @@ myApp.filter('mobileFilter', function(){
         }
         finalArray=tempArray;
         tempArray=[];
+  
       }
       else
       {

@@ -9,6 +9,8 @@
    $scope.validate = function() {
      var x=$scope.email;
      console.log("email",x);
+     var y=$scope.password;
+     console.log("password",y);
      $state.go('home.dashboard');
    }
  });
