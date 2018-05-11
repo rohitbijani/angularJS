@@ -7,7 +7,7 @@
       <md-content layout-margin id="sidenav-content">
         <div>
           <fieldset>
-            <legend><b>Manufacturer</b></legend>
+            <legend><h3>Manufacturer</h3></legend>
             <div ng-repeat="x in manufacturerArray">
               <md-checkbox ng-checked="exists(x, manufacturerSelected)" ng-click="checkbox(x,manufacturerSelected)">
                 {{x}}
@@ -15,7 +15,7 @@
             </div>
           </fieldset>
           <fieldset>
-            <legend><b>Storage</b></legend>
+            <legend><h3>Storage</h3></legend>
             <div ng-repeat="x in storageArray">
               <md-checkbox ng-checked="exists(x, storageSelected)" ng-click="checkbox(x,storageSelected)">
                 {{x + " GB"}}
@@ -23,7 +23,7 @@
             </div>
           </fieldset>
           <fieldset>
-            <legend><b>OS</b></legend>
+            <legend><h3>OS</h3></legend>
             <div ng-repeat="x in osArray">
               <md-checkbox ng-checked="exists(x, osSelected)" ng-click="checkbox(x,osSelected)">
                 {{x}}
@@ -31,7 +31,7 @@
             </div>
           </fieldset>
           <fieldset>
-            <legend><b>Camera</b></legend>
+            <legend><h3>Camera</h3></legend>
             <div ng-repeat="x in cameraArray">
               <md-checkbox ng-checked="exists(x, cameraSelected)" ng-click="checkbox(x,cameraSelected)">
                 {{x + " MP"}}
